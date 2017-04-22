@@ -1,5 +1,5 @@
 ## Installation steps on MISP host
-1. git clone 
+1. git clone https://github.com/jymcheong/aptc.git
 2. edit <path to misp app>/Controller/EventsController.php
 3. locate addTag method
 4. towards the end of the method, find $this->Event->save($event) & add
