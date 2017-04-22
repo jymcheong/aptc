@@ -22,3 +22,6 @@ A set of scripts using [PyMISP](https://github.com/MISP/PyMISP) to extend [MISP]
 
 ## Sh0ut 0ut
 Big thank you to the good folks @ https://gitter.im/MISP/MISP
+
+## Useful links
+Least painful way to setup MISP: https://github.com/harvard-itsecurity/docker-misp
