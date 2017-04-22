@@ -30,3 +30,10 @@ Big thank you to the awesome folks @ https://gitter.im/MISP/MISP & Harvard-IT-se
 
 ## Useful links
 Most convenient way to setup the latest MISP: https://github.com/harvard-itsecurity/docker-misp
+
+## Under-the-hood (TL;DR)
+- Assuming the test-case & targets events are setup properly, test-start tag will trigger getpayloads.py
+- getpayloads.py in turn triggers getresults.py to query graylog with pre-defined query statement to find indicator of success
+- It is up to you to decide what you mean by success, typically a Product-under-Test will emit logs when it catches a payload
+
+![APTC overview](https://cdn-images-1.medium.com/max/2000/1*G6LukbBiZRgo2Nz9vPvV7w.png)
