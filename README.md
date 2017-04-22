@@ -1,16 +1,15 @@
 ## Installation steps for MISP host
 1. git clone https://github.com/jymcheong/aptc.git
-2. edit <path to misp app>/Controller/EventsController.php
-3. locate addTag method
-4. towards the end of the method, find $this->Event->save($event) & add
+2. Edit <path to misp app>/Controller/EventsController.php
+3. Locate addTag method, towards the end of the method, find $this->Event->save($event) & add
 ```
 if ($tag['Tag']['name']=="aptc:test-start") shell_exec("python3 /var/www/MISP/tools/aptc/getpayloads.py -id ".$id." > /dev/null 2>/dev/null &");
 ```
-5. create aptc folder under MISP tools directory 
-6. copy all the aptc scripts to that folder & adjust permission accordingly
-7. edit key.py to set misp_url & key
-8. create target paths (samba mount point) to write payloads to (give appropriate permissions for read/write)
-9. install Samba & setup share for targets to mount (by default APTC writes to /opt/aptc/targets/HOSTNAME. Read https://automated-payload-test-controller.github.io to understand how this whole thing works)
+4. Create aptc folder under MISP tools directory 
+5. Copy all the aptc scripts to that folder & adjust permission accordingly
+6. Edit key.py to set misp_url & key
+7. Create target paths (samba mount point) to write payloads to (give appropriate permissions for read/write)
+8. Install Samba & setup share for targets to mount (by default APTC writes to /opt/aptc/targets/HOSTNAME. Read https://automated-payload-test-controller.github.io to understand how this whole thing works)
 
 ## Installation steps for Windows target(s)
 1. Mount the samba shared folder in your Windoze
