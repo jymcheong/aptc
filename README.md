@@ -16,5 +16,7 @@ if ($tag['Tag']['name']=="aptc:test-start") shell_exec("python3 /var/www/MISP/to
 
 A set of scripts using PyMISP (https://github.com/MISP/PyMISP) to extend MISP (https://github.com/MISP/MISP) for automated payload testing.
 
+[More details](https://automated-payload-test-controller.github.io)
+
 [Demo youtube link](https://www.youtube.com/watch?v=mASJv_2HZbM)
 
