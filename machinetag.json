@@ -1,0 +1,46 @@
+{
+  "namespace": "aptc",
+  "expanded": "Automated Payload Test Controller",
+  "description": "A payload test-automation controller for MISP created by Digisafe (STEE-Infosec)",
+  "version": 1,
+  "predicates": [
+    {
+      "value": "test-case",
+      "expanded": "This tag for test-case"
+    },
+    {
+      "value": "test-start",
+      "expanded": "This tag triggers a test to start. Can be applied to payload or test-case event"
+    },
+    {
+      "value": "test-in-progress",
+      "expanded": "This tag for test is in progress"
+    },
+    {
+      "value": "test-completed",
+      "expanded": "This tag for test reaches completion"
+    },
+    {
+      "value": "target",
+      "expanded": "This tag for target test machine"
+    },
+    {
+      "value": "payload",
+      "expanded": "This tag is to retrieve all APT related payloads"
+    },
+    {
+      "value": "payload-executable-binary",
+      "expanded": "Type 1, aka compiled codes."
+    },
+    {
+      "value": "payload-script",
+      "expanded": "Type 2, aka interpreted codes."
+    },
+    {
+      "value": "payload-content",
+      "expanded": "Type 3, exploits-based eg. pdf, msoffice, images, videos, audio, fonts, active-contents"
+    }
+
+  ],
+  "values": null
+}
