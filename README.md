@@ -18,7 +18,7 @@ A set of scripts using [PyMISP](https://github.com/MISP/PyMISP) to extend [MISP]
 
 [More details](https://automated-payload-test-controller.github.io)
 
-[Demo youtube link](https://www.youtube.com/watch?v=mASJv_2HZbM)
+[Demo of CVE2017-0199 payload youtube link](https://www.youtube.com/watch?v=mASJv_2HZbM)
 
 ## Sh0ut 0ut
 Big thank you to the good folks @ https://gitter.im/MISP/MISP
