@@ -25,7 +25,7 @@ A set of scripts using [PyMISP](https://github.com/MISP/PyMISP) to extend [MISP]
 [Demo of CVE2017-0199 payload youtube link](https://www.youtube.com/watch?v=mASJv_2HZbM)
 
 ## Sh0ut 0utz
-Big thank you to the awesome folks @ https://gitter.im/MISP/MISP
+Big thank you to the awesome folks @ https://gitter.im/MISP/MISP & Harvard-IT-security
 
 ## Useful links
-Least tedious way to setup MISP: https://github.com/harvard-itsecurity/docker-misp
+Most convenient way to setup the latest MISP: https://github.com/harvard-itsecurity/docker-misp
