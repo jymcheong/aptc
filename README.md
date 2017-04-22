@@ -29,7 +29,7 @@ if ($tag['Tag']['name']=="aptc:test-start") shell_exec("python3 /var/www/MISP/to
 7. Copy machinetag.json into that folder, update your tags & enable all of them
 8. Edit key.py to set misp_url & key
 9. Create target paths (samba mount point) to write payloads to (give appropriate permissions for read/write)
-10. Install Samba & setup share for targets to mount (by default APTC writes to /opt/aptc/targets/HOSTNAME. Read https://automated-payload-test-controller.github.io to understand how this whole thing works)
+10. Install Samba & setup share for targets to mount (by default APTC writes to /opt/aptc/targets/HOSTNAME, ie. share /opt/aptc/targets. You can change it by editing aptc.py. Read https://automated-payload-test-controller.github.io to understand how this whole thing works)
 
 ## Installation steps for Windows target(s)
 1. Mount the samba shared folder in your Windoze
