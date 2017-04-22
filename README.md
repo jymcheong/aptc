@@ -3,7 +3,7 @@
 
 - Assuming (test-case & targets) events are setup properly, test-start tag will trigger getpayloads.py
 - getpayloads.py in turn triggers getresults.py to query graylog with pre-defined query statement to find indicator of success
-- It is up to you to decide what you mean by success, typically a Product-under-Test will emit logs when it catches a payload
+- It is up to you to decide what you mean by success/hit, typically a Product-under-Test will emit logs when it catches a payload. When the query can't find the indicators after a certain amount of time, it will deemed as 'miss'
 
 ## Installation steps for MISP host
 1. git clone https://github.com/jymcheong/aptc.git
