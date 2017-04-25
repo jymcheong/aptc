@@ -2,7 +2,7 @@
 
 A set of scripts using [PyMISP](https://github.com/MISP/PyMISP) to extend [MISP](https://github.com/MISP/MISP) for automated payload testing.
 
-[User Documentation](https://automated-payload-test-controller.github.io), click on the topics within the mind-map to explore further.
+[User Documentation](https://jymcheong.github.io/aptc/), click on the mind-map topics/nodes to explore further.
 
 [Demo of CVE2017-0199 payload youtube link](https://www.youtube.com/watch?v=mASJv_2HZbM)
 
@@ -12,8 +12,8 @@ Big thank you to the awesome folks @ https://gitter.im/MISP/MISP & Harvard-IT-se
 ## Under-the-hood (TL;DR)
 ![APTC overview](https://cdn-images-1.medium.com/max/2000/1*G6LukbBiZRgo2Nz9vPvV7w.png)
 
-- Assuming (test-case & targets) events are setup properly, tagging a test-case event with test-start tag will trigger getpayloads.py
-- getpayloads.py in turn triggers getresults.py to query graylog with pre-defined query statement to find indicator of success
+- Assuming (test-case & targets) events are setup properly, tagging a test-case event with test-start tag will launch getpayloads.py
+- getpayloads.py in turn launches getresults.py to query graylog with pre-defined query statement to find indicator of success
 - It is up to you to decide what you mean by success/hit, typically a Product-under-Test will emit logs when it catches a payload. When the query can't find the indicators after a certain amount of time, it will deemed as 'miss'
 
 ## Installation steps for MISP host
@@ -29,7 +29,7 @@ if ($tag['Tag']['name']=="aptc:test-start") shell_exec("python3 /var/www/MISP/to
 7. Copy machinetag.json into that folder, update your tags & enable all of them
 8. Edit key.py to set misp_url & key
 9. Create target paths (samba mount point) to write payloads to (give appropriate permissions for read/write)
-10. Install Samba & setup share for targets to mount (by default APTC writes to /opt/aptc/targets/HOSTNAME, ie. share /opt/aptc/targets. You can change it by editing aptc.py. Read https://automated-payload-test-controller.github.io to understand how this whole thing works)
+10. Install Samba & setup share for targets to mount (by default APTC writes to /opt/aptc/targets/HOSTNAME, ie. share /opt/aptc/targets. You can change it by editing aptc.py. Refer to https://jymcheong.github.io/aptc/ to understand how this whole thing works)
 
 ## Installation steps for Windows target(s)
 1. Mount the samba shared folder in your Windoze
