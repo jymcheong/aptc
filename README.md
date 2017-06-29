@@ -26,7 +26,7 @@ Add the line below above the return statement
 if ($tag['Tag']['name']=="aptc:test-start") shell_exec("python3 /var/www/MISP/tools/aptc/getpayloads.py -id ".$id." > /dev/null 2>/dev/null &");
 ```
 4. Create aptc folder under MISP tools directory 
-5. Copy all the aptc scripts to that folder & adjust permission accordingly
+5. Copy all the aptc scripts to that folder & adjust permission accordingly (eg. readable for www-data, chmod +x *.py)
 6. Create aptc folder under /var/www/MISP/app/files/taxonomies/ (or equivalent) 
 7. Copy machinetag.json into that folder, update your tags & enable all of them
 8. Edit key.py to set misp_url & key
