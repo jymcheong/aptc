@@ -19,7 +19,9 @@ Big thank you to the awesome folks @ https://gitter.im/MISP/MISP & Harvard-IT-se
 ## Installation steps for MISP host
 1. git clone https://github.com/jymcheong/aptc.git
 2. Edit <path to misp app>/Controller/EventsController.php
-3. Locate addTag method, towards the end of the method, find $this->Event->save($event) & add
+3. Find Tag added, you should locate "return new CakeResponse(array('body'=> json_encode(array('saved' => true, 'success' => 'Tag added..."
+
+Add the line below above the return statement
 ```
 if ($tag['Tag']['name']=="aptc:test-start") shell_exec("python3 /var/www/MISP/tools/aptc/getpayloads.py -id ".$id." > /dev/null 2>/dev/null &");
 ```
